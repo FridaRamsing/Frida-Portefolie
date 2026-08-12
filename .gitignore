@@ -1,0 +1,30 @@
+.DS_Store
+
+# Local/editor noise
+.vscode/
+
+# Old app/build files from the first setup attempt.
+# They are not needed for the GitHub Pages version.
+node_modules/
+app/
+build/
+db/
+dist/
+drizzle/
+examples/
+public/
+tests/
+worker/
+.next/
+.openai/
+.vinext/
+.wrangler/
+package.json
+package-lock.json
+drizzle.config.ts
+eslint.config.mjs
+next-env.d.ts
+next.config.ts
+postcss.config.mjs
+tsconfig.json
+vite.config.ts
