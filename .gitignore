@@ -19,8 +19,6 @@ worker/
 .openai/
 .vinext/
 .wrangler/
-package.json
-package-lock.json
 drizzle.config.ts
 eslint.config.mjs
 next-env.d.ts

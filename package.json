@@ -1,0 +1,11 @@
+{
+  "name": "frida-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "NO_UPDATE_CHECK=1 serve . --no-clipboard -l tcp://127.0.0.1:3000"
+  },
+  "devDependencies": {
+    "serve": "^14.2.6"
+  }
+}
