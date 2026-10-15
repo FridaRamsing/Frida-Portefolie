@@ -25,13 +25,13 @@ document.querySelectorAll("[data-version-comparison]").forEach((section) => {
   const versions = {
     before: {
       image: "../assets/cases/mellemrum/before-about.png",
-      url: "https://cederdorff.com/mellemrum/om",
+      url: "https://cederdorff.com/mellemrum/",
       alt: "Den oprindelige Om Mellemrum-side før redesignet.",
       caption: "Før / Den oprindelige Om Mellemrum-side.",
     },
     after: {
       image: "../assets/cases/mellemrum/after-about.png",
-      url: "https://fridaramsing.github.io/Forbedring-af-mellemrum/om",
+      url: "https://fridaramsing.github.io/Forbedring-af-mellemrum/",
       alt: "Den opdaterede Om Mellemrum-side efter redesignet.",
       caption: "Efter / Mit redesign af Om Mellemrum.",
     },
