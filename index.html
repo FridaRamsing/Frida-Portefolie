@@ -1,165 +1,100 @@
 <!doctype html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Frida Ramsing | Creative Frontend Portfolio</title>
-    <meta
-      name="description"
-      content="Portfolio for Frida Ramsing, featuring selected work projects, school projects, creative work and contact."
-    />
-    <link rel="stylesheet" href="style.css?v=20260922" />
+    <title>Frida Ramsing | Digital udvikler og designer</title>
+    <meta name="description" content="Digitalt design, udvikling i React og kreative projekter. Se et udvalg af Frida Ramsings arbejde." />
+    <link rel="stylesheet" href="style.css?v=20261015-retro" />
   </head>
-  <body>
+  <body class="home-page">
     <header class="site-nav">
-      <a class="brand" href="#top" aria-label="Go to homepage">
-        <img src="assets/frida-logo-blue.png" alt="Frida Ramsing logo" />
-      </a>
-      <nav class="main-menu" aria-label="Main menu">
-        <a href="#about">about me</a>
-        <a href="projects.html">my projects</a>
-        <a href="#contact">contact</a>
+      <a class="brand" href="#top" aria-label="Frida Ramsings forside">fr.</a>
+      <nav class="main-menu" aria-label="Hovedmenu">
+        <a href="#about">Om mig</a>
+        <a href="projects.html">Projekter</a>
+        <a href="#contact">Kontakt</a>
       </nav>
     </header>
-
     <main id="top">
-      <section class="hero" id="about">
-        <p class="hero-label">Frida Ramsing / portfolio version 01</p>
-
-        <div class="hero-split">
-          <div class="hero-role hero-role-left">
-            <p class="role-kicker">creative</p>
-            <h1>Creative</h1>
-            <p class="role-tagline">The things I make just because I can.</p>
-            <p>
-              Paintings, posters, experiments and ideas that don't always need
-              a brief, just a little curiosity.
-            </p>
-          </div>
-
-          <figure
-            class="split-portrait"
-            data-split-portrait
-            aria-label="Interactive split portrait of Frida Ramsing"
-          >
-            <img
-              class="portrait-base"
-              src="assets/frida-portrait-photo-blue.png"
-              alt="Split portrait of Frida Ramsing with illustration and photo."
-            />
-            <span class="portrait-layer portrait-photo" aria-hidden="true"></span>
-            <span class="portrait-layer portrait-art" aria-hidden="true"></span>
-            <span class="split-line" aria-hidden="true"></span>
-          </figure>
-
-          <div class="hero-role hero-role-right">
-            <p class="role-kicker">&lt;code&gt;</p>
-            <h1>Code</h1>
-            <p class="role-tagline">Where ideas become interactive.</p>
-            <p>
-              I like turning designs into things you can click, explore and
-              actually use.
-            </p>
-          </div>
+      <section class="home-hero">
+        <div>
+          <p class="eyebrow">Digital udvikler / Designer</p>
+          <h1>Frida<br />Ramsing.</h1>
+          <p class="home-aside">Nysgerrig af natur.</p>
+          <p class="home-intro">Jeg trives med en god udfordring og elsker at gøre idéer til virkelighed gennem design og udvikling. Har du ikke idéen endnu, finder vi den sammen.</p>
+          <a class="underlined-link" href="#projects">Se mit arbejde ↓</a>
         </div>
-
-        <p class="hero-intro">
-          I am a digital developer who works best with a good challenge. I love
-          listening to your ideas and bringing them to life! If you are out of
-          ideas I will dive in and help you find your dream product.
-        </p>
+        <figure class="home-portrait">
+          <img src="assets/frida-seated.jpeg?v=20261015-hd" alt="Frida Ramsing sidder med benene over kors og smiler." width="448" height="750" fetchpriority="high" />
+          <figcaption>Hej, det er mig.</figcaption>
+        </figure>
       </section>
 
-      <section class="section latest-section" id="projects">
-        <div class="section-heading">
-          <p class="eyebrow">selected projects</p>
-          <h2>
-            A selection of my work across design,<br />
-            development and creativity.
-          </h2>
-          <a class="text-link section-link" href="projects.html">view all projects</a>
+      <section class="short-bio" id="about">
+        <h2>Lidt om mig.</h2>
+        <p>Jeg arbejder med visuelt design, prototyper i Figma og udvikling i React. Jeg kan godt lide at være med hele vejen fra den første skitse til noget, andre kan bruge. Og når jeg ikke laver hjemmesider, får nysgerrigheden ofte frit spil i en plakat eller et maleri.</p>
+      </section>
+
+      <section class="home-cases" id="projects" aria-labelledby="cases-heading">
+        <div class="home-section-heading">
+          <h2 id="cases-heading">Et udvalg af mit arbejde.</h2>
+          <p class="eyebrow">Udvalgte projekter / 2026</p>
         </div>
-
-        <div class="project-teaser-grid" aria-label="Selected projects">
-          <a
-            class="project-teaser-card"
-            id="leapcards"
-            href="projects/leapcards.html"
-          >
-            <figure class="project-teaser-image project-teaser-image-contain">
-              <img
-                src="assets/projects/leapcards/leapcards-tablet.png"
-                alt="LeapCards displayed on a tablet."
-              />
-            </figure>
-            <span>01 / work</span>
-            <h3>LeapCards</h3>
-            <p>
-              Modernised LeapCards.net and continued into content performance
-              with 923 users on the platform.
-            </p>
-            <em>view case</em>
+        <div class="home-cases-grid">
+          <a class="home-case" href="cases/mellemrum.html">
+            <span class="eyebrow">01 / Udvikling</span>
+            <h3>Mellemrum</h3>
+            <p>Fra prototype til en mere stabil platform for kulturevents.</p>
+            <span class="case-arrow" aria-hidden="true">&nearr;</span>
           </a>
-
-          <a class="project-teaser-card" id="fjera" href="projects/fjera.html">
-            <figure class="project-teaser-image project-teaser-image-contain">
-              <img
-                src="assets/projects/fjera/fjera-phone.png"
-                alt="Fjera mental health web app shown on iPhone mockups."
-              />
-            </figure>
-            <span>02 / school</span>
-            <h3>Fjera</h3>
-            <p>
-              A mental health web app with small companions, designed in Figma,
-              prototyped in Figma and built as a React project.
-            </p>
-            <em>view case</em>
+          <a class="home-case" href="cases/vuuh.html">
+            <span class="eyebrow">02 / UX-design</span>
+            <h3>Vuuh</h3>
+            <p>En tydeligere vej gennem den første opsætning.</p>
+            <span class="case-arrow" aria-hidden="true">&nearr;</span>
           </a>
-
-          <a
-            class="project-teaser-card"
-            id="look-closer"
-            href="projects/look-closer.html"
-          >
-            <figure class="project-teaser-image">
-              <img
-                src="assets/projects/look-closer/look-closer-wall.jpg"
-                alt="Look Closer poster displayed on a building wall."
-              />
-            </figure>
-            <span>03 / creative</span>
-            <h3>Look Closer</h3>
-            <p>
-              A personal poster project about paying closer attention to the
-              world and the details hidden inside each letter.
-            </p>
-            <em>view case</em>
+          <a class="home-case" href="cases/encore.html">
+            <span class="eyebrow">03 / Branding</span>
+            <h3>ENCORE</h3>
+            <p>Et nyt kapitel til tøj fra LA RŌUGE.</p>
+            <span class="case-arrow" aria-hidden="true">&nearr;</span>
           </a>
+        </div>
+        <a class="underlined-link more-projects" href="projects.html">Se alle projekter ↗</a>
+      </section>
+
+      <section class="home-creative">
+        <div>
+          <p class="eyebrow">Når jeg ikke koder</p>
+          <h2>Ikke alt<br />behøver <em>en opgave.</em></h2>
+          <p>Malerier, plakater og idéer, jeg prøver af, fordi jeg har lyst. Der behøver ikke altid være en opgave bag.</p>
+          <a class="underlined-link" href="projects.html#creative">Se min kreative side ↗</a>
+        </div>
+        <figure>
+          <a href="projects/look-closer.html"><img src="assets/look-closer-preview.jpeg" alt="Look Closer-plakaten vist på en husmur." width="900" height="675" loading="lazy" /></a>
+          <figcaption>Look Closer / Personligt plakatprojekt</figcaption>
+        </figure>
+      </section>
+
+      <section class="home-skills">
+        <h2>Det kan jeg bidrage med.</h2>
+        <div class="skills-grid">
+          <div><h3>Design og prototyper.</h3><p>Visuel identitet, brugerflader og interaktive prototyper i Figma.</p></div>
+          <div><h3>Udvikling og forbedring.</h3><p>React, HTML, CSS og JavaScript. Jeg får design og funktion til at hænge sammen.</p></div>
+          <div><h3>Kreative idéer.</h3><p>Plakater, visuel fortælling og lysten til at afprøve noget nyt.</p></div>
         </div>
       </section>
 
-      <section class="section contact-section" id="contact">
-        <div class="section-heading">
-          <p class="eyebrow">contact</p>
-          <h2>Let us connect.</h2>
+      <footer class="contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Har du noget på hjerte?</p>
+          <h2>Lad os gøre<br />noget ved det.</h2>
+          <p>En god idé, en svær udfordring eller bare et hej. Jeg vil gerne høre fra dig.</p>
+          <a class="underlined-link" href="mailto:Frida@ramsing.com">Frida@ramsing.com &nearr;</a>
         </div>
-
-        <div class="contact-panel">
-          <h2>Contact me</h2>
-          <p>
-            Want to work together, have a question, or just say hi? Feel free
-            to reach out via email, LinkedIn or GitHub.
-          </p>
-          <div class="contact-links">
-            <a href="mailto:Frida@ramsing.com">Frida@ramsing.com</a>
-            <a href="#" aria-label="LinkedIn coming later">LinkedIn</a>
-            <a href="#" aria-label="GitHub coming later">GitHub</a>
-          </div>
-        </div>
-      </section>
+        <p class="footer-note">Altid<br />nysgerrig.</p>
+      </footer>
     </main>
-
-    <script src="script.js"></script>
   </body>
 </html>

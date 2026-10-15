@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mellemrum | Frida Ramsing</title>
+    <meta name="description" content="Fra React-prototype til en mere stabil eventplatform." />
+    <link rel="stylesheet" href="../style.css?v=20261015-retro" />
+    <link rel="stylesheet" href="cases.css?v=20261015-comparison" />
+    <script src="cases.js" defer></script>
+  </head>
+  <body class="exam-page case-visual-story mellemrum-case">
+    <header class="site-nav">
+      <a class="brand" href="../index.html" aria-label="Gå til forsiden">fr.</a>
+      <nav class="main-menu" aria-label="Hovedmenu">
+        <a href="../index.html#about">Om mig</a>
+        <a href="../projects.html">Projekter</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </header>
+    <main id="case-content">
+      <div class="case-opening">
+      <header class="exam-hero">
+        <p class="eyebrow">01 / React / Individuelt</p>
+        <h1>Mellemrum.</h1>
+        <p class="exam-lede">Fra React-prototype til en mere stabil eventplatform.</p>
+        <div class="visual-project-links">
+          <a class="project-button project-button-primary" href="https://fridaramsing.github.io/Forbedring-af-mellemrum/" target="_blank" rel="noopener noreferrer">Se hjemmesiden ↗</a>
+          <a class="project-button" href="https://github.com/FridaRamsing/Forbedring-af-mellemrum" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+      </header>
+
+      <figure class="visual-hero-image">
+        <a href="https://fridaramsing.github.io/Forbedring-af-mellemrum/" target="_blank" rel="noopener noreferrer"><img src="../assets/cases/mellemrum/home-sharp.png" alt="Mellemrums publicerede forside med introduktion til kulturevents og eventsøgning." width="1280" height="850" fetchpriority="high" /></a>
+        <figcaption>Den publicerede forside.</figcaption>
+      </figure>
+      </div>
+
+      <section class="visual-intro challenge-intro" aria-labelledby="challenge-title">
+        <div class="challenge-heading">
+          <p class="eyebrow">Udgangspunktet</p>
+          <h2 id="challenge-title">En lovende prototype.<br /><em>Et ufærdigt brugerforløb.</em></h2>
+        </div>
+        <div class="exam-copy">
+          <p>Mellemrum hjælper besøgende med at finde og tilmelde sig kulturevents i Aarhus. Jeg overtog en React-prototype med uens interaktioner, en ufærdig tilmelding og problemer med publiceringen.</p>
+          <p>Jeg gennemgik brugerrejsen og prioriterede tilmelding og databaseforbindelse før navigation, søgning og feedback. Det var vigtigere at få kerneforløbet til at virke end at tilføje flere funktioner.</p>
+        </div>
+          <dl class="case-at-a-glance challenge-facts">
+            <div><dt>Min rolle</dt><dd>Individuel udvikling, brugerflade og kontrol</dd></div>
+            <div><dt>Værktøjer</dt><dd>React, Supabase, GitHub, Lighthouse</dd></div>
+            <div><dt>Fokus</dt><dd>Tilmelding, feedback og publicering</dd></div>
+          </dl>
+      </section>
+
+      <section class="version-comparison" aria-labelledby="comparison-title" data-version-comparison>
+        <div class="comparison-heading">
+          <div><p class="eyebrow">Originalen og mit redesign</p><h2 id="comparison-title">Før og efter.</h2></div>
+          <div class="version-switch" role="group" aria-label="Vælg version af Mellemrum">
+            <button type="button" data-version="before" aria-pressed="false">Før</button>
+            <button type="button" data-version="after" aria-pressed="true">Efter</button>
+          </div>
+        </div>
+        <figure class="comparison-preview">
+          <img data-version-image src="../assets/cases/mellemrum/after-about.png" alt="Den opdaterede Om Mellemrum-side med en stor introduktion og tydeligere visuelt hierarki." width="2560" height="1700" loading="lazy" />
+          <figcaption data-version-caption aria-live="polite">Efter / Mit redesign af Om Mellemrum.</figcaption>
+        </figure>
+        <div class="comparison-actions">
+          <a data-version-link href="https://fridaramsing.github.io/Forbedring-af-mellemrum/om" target="_blank" rel="noopener noreferrer">Prøv denne version ↗</a>
+        </div>
+        <p class="comparison-note">Åbner den valgte version i en ny fane.</p>
+      </section>
+
+      <section class="visual-story-block" aria-labelledby="discovery-title">
+        <div class="visual-story-copy">
+          <p class="eyebrow">01 / Find et event</p>
+          <h2 id="discovery-title">Mindre søgen.<br />Flere oplevelser.</h2>
+          <p>Forsiden fremhæver kommende events. Søgning og kategorier gør det lettere at indsnævre listen. En ny søgning nulstiller kategorien til »Alle«, så et gammelt filter ikke skjuler relevante resultater.</p>
+          <p>Ens afstande og faste placeringer af knapper gør næste handling lettere at finde.</p>
+        </div>
+        <figure>
+          <a href="../assets/cases/mellemrum/events-sharp.png" target="_blank" rel="noopener noreferrer" aria-label="Forstør billedet af eventsøgningen"><img src="../assets/cases/mellemrum/events-sharp.png" alt="Eventsøgning, kategorifiltre og ensartede eventkort." width="1280" height="900" loading="lazy" /></a>
+          <figcaption>Søgning og filtre i den nuværende løsning.</figcaption>
+        </figure>
+      </section>
+
+      <section class="visual-story-block visual-story-reverse" aria-labelledby="registration-title">
+        <div class="visual-story-copy">
+          <p class="eyebrow">02 / Reservér en plads</p>
+          <h2 id="registration-title">En formular med<br />forbindelse til databasen.</h2>
+          <p>Besøgende kan tilmelde sig med navn og e-mail på eventsiden. Formularen sender data til Supabase. Her kontrollerede jeg, at tilmeldingerne blev gemt, og at rapporterne for det samlede antal og antal pr. event blev opdateret.</p>
+          <p>En besked efter tilmelding gør resultatet tydeligere. Automatiske bekræftelsesmails er ikke implementeret. Formularen lover stadig en mail, og den tekst skal derfor rettes.</p>
+        </div>
+        <figure>
+          <a href="../assets/cases/mellemrum/registration-sharp.png" target="_blank" rel="noopener noreferrer" aria-label="Forstør billedet af tilmeldingen"><img src="../assets/cases/mellemrum/registration-sharp.png" alt="Eventoplysninger og en tom tilmeldingsformular på samme side." width="1280" height="1000" loading="lazy" /></a>
+          <figcaption>Den nuværende eventside med tilmelding.</figcaption>
+        </figure>
+        <!-- TODO: Add a genuine success-state screenshot here.
+             Confirm and explain actual event/registration relations, normalisation
+             and the internal registration overview; do not imply they are complete. -->
+      </section>
+
+      <section class="visual-story-block database-evidence" aria-labelledby="database-title">
+        <div class="visual-story-copy">
+          <h2 id="database-title">Overblik over tilmeldinger.</h2>
+          <p>Jeg kontrollerede, at Supabase gemte tilmeldingerne og opdaterede rapporterne. Billedet viser fem testtilmeldinger fordelt på tre events.</p>
+        </div>
+        <figure>
+          <img src="../assets/cases/mellemrum/supabase-reports.png" alt="Supabase-rapporter med fem tilmeldinger: tre til Byen efter mørke og én til hvert af de øvrige to events." width="1372" height="712" loading="lazy" />
+          <figcaption>Samlet antal tilmeldinger og antal pr. event.</figcaption>
+        </figure>
+      </section>
+
+      <section class="lighthouse-evidence" aria-labelledby="lighthouse-title">
+        <div class="evidence-heading">
+          <div><h2 id="lighthouse-title">Lighthouse.</h2></div>
+          <p>Jeg undersøgte løsningen med Lighthouse. Billederne viser en lokal Om-side og den publicerede forside. Da både sider og miljøer er forskellige, er det ikke en kontrolleret før/efter-måling.</p>
+        </div>
+        <div class="lighthouse-figures">
+          <figure>
+            <img src="../assets/cases/mellemrum/lighthouse-before.png" alt="Tidligere Lighthouse-måling på localhost:5174/om: ydeevne 50, tilgængelighed 95, bedste praksis 73 og SEO 92." width="1834" height="1032" loading="lazy" />
+            <figcaption>Tidligere: lokal Om-side.</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/cases/mellemrum/lighthouse-after.png" alt="Senere Lighthouse-måling af forsiden på GitHub Pages: ydeevne 99, tilgængelighed 100, bedste praksis 100 og SEO 100." width="1850" height="988" loading="lazy" />
+            <figcaption>Senere: publiceret forside.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="visual-intro compact-verification" aria-labelledby="verification-title">
+        <div><h2 id="verification-title">Kontrol af løsningen.</h2></div>
+        <div class="exam-copy">
+          <p>Jeg forbedrede mobiltilpasning, formularfelternes etiketter, kontrast og feedback. Jeg tilføjede også lukning med Escape i dialogen til eventforslag og kontrollerede produktionsbyg og publicering på GitHub Pages.</p>
+          <p>Min efterfølgende gennemgang fremhævede tilmelding, søgning, feedback og et stabilt byg. Det var ikke en formel analyse før udviklingen. Lokale filer begrænser eksterne afhængigheder; et planlagt Supabase-kald er vedligeholdelse, ikke en garanti for oppetid.</p>
+        </div>
+        <!-- TODO: Link real audit/prioritisation and build/workflow evidence when supplied. -->
+      </section>
+
+      <!-- TODO Figma: Frida will supply the public playable prototype/share link.
+           Activate this section only after verifying permissions and start frame. -->
+      <template id="figma-demo">
+        <section class="exam-demo" aria-label="Mellemrum-prototype i Figma">
+          <button type="button" data-load-demo data-title="Interaktiv Mellemrum-prototype i Figma">Indlæs prototype</button>
+          <div class="exam-frame" data-demo-frame hidden></div>
+          <p data-demo-status role="status"></p>
+          <!-- TODO: add a direct link to the same verified prototype. -->
+        </section>
+      </template>
+
+      <section class="visual-reflection" aria-labelledby="reflection-title">
+        <div><h2 id="reflection-title">Det tager jeg med.</h2><p>En løsning er ikke færdig, fordi brugerfladen ser godt ud. Tilmeldinger skal gå igennem, feedback skal give mening, og publiceringen skal fungere.</p><p>Næste skridt er at forbinde eventforslag til databasen, tilføje bekræftelsesmails og undersøge tastaturnavigation, fejl og ydeevne nærmere.</p></div>
+        <div><h2>Mulig værdi.</h2><p>Besøgende kan få en mere tryg tilmelding, og arrangører kan bruge rapporterne i planlægningen. Dataintegration og rapportkontrol understøtter potentialet, men dokumenterer ikke flere tilmeldinger eller mindre administration.</p></div>
+      </section>
+      <section class="other-cases" aria-labelledby="other-cases-title">
+        <h2 id="other-cases-title">Se mine andre cases.</h2>
+        <nav aria-label="Andre cases">
+          <a href="vuuh.html"><span>02 / UX-design</span><strong>Vuuh <span aria-hidden="true">&nearr;</span></strong></a>
+          <a href="encore.html"><span>03 / Branding</span><strong>ENCORE <span aria-hidden="true">&nearr;</span></strong></a>
+        </nav>
+      </section>
+      <footer class="contact-section case-contact" id="contact">
+        <div>
+          <p class="eyebrow">Lad os tale sammen</p>
+          <h2>Har du noget<br />på hjerte?</h2>
+          <figure class="contact-portrait"><img src="../assets/frida-contact.jpeg" alt="Portræt af Frida Ramsing i en sort blazer." width="1595" height="2000" loading="lazy" /></figure>
+        </div>
+        <form data-contact-form aria-label="Kontakt Frida" action="https://formsubmit.co/Frida@ramsing.com" method="post">
+          <input type="hidden" name="_subject" value="Ny besked fra Fridas portefølje" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://fridaramsing.github.io/Frida-Portefolie/contact-thanks.html" />
+          <input type="hidden" name="_autoresponse" value="Tak for din besked! Jeg har modtaget den og vender tilbage inden for to dage. Jeg glæder mig til at høre mere om dine idéer. Venlig hilsen Frida Ramsing" />
+          <label for="contact-name">Navn<input id="contact-name" name="name" autocomplete="name" maxlength="100" required /></label>
+          <label for="contact-email">E-mail<input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required /></label>
+          <label for="contact-message">Besked<textarea id="contact-message" name="message" rows="4" maxlength="2000" required></textarea></label>
+          <button type="submit">Send besked ↗</button>
+          <p class="contact-form-note">Jeg svarer inden for to dage. Beskeder sendes via <a href="https://formsubmit.co/privacy.pdf" target="_blank" rel="noopener noreferrer">FormSubmit</a>.</p>
+        </form>
+      </footer>
+    </main>
+  </body>
+</html>
+
